@@ -60,6 +60,7 @@ h3 {
 .p {
   text-indent: 2em;
   margin: 8px;
+  display: block;
 }
 
 .indent {
