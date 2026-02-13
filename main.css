@@ -50,3 +50,251 @@ html {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
+
+@media print {
+
+  @page {
+    size: A4;
+    margin: 6mm 8mm;
+  }
+
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  html, body {
+    background: white !important;
+    color: #1e293b !important;
+    font-size: 13px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  * {
+    transition: none !important;
+    box-shadow: none !important;
+  }
+
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .project-card,
+  .timeline-line {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  #hero {
+    min-height: auto !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-image: none !important;
+  }
+
+  #hero > div {
+    padding-top: 1rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  #hero .profile-image {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+
+  #hero h1 {
+    font-size: 1.75rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  #hero .text-xl,
+  #hero .sm\:text-2xl {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  #hero .text-lg {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  #hero .flex.flex-col {
+    display: none !important;
+  }
+
+  section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  section h2 {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #habilidades .grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  #habilidades .bg-white {
+    padding: 0.75rem 1rem !important;
+  }
+
+  #habilidades h3 {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .skill-badge {
+    font-size: 0.75rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+
+  #habilidades p {
+    font-size: 0.85rem !important;
+    margin-top: 0.75rem !important;
+  }
+
+  #projetos .grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  .project-card {
+    padding: 0.85rem 1rem !important;
+  }
+
+  .project-card h3 {
+    font-size: 0.9rem !important;
+  }
+
+  .project-card p {
+    font-size: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .project-card .text-xs {
+    font-size: 0.7rem !important;
+    padding: 0.15rem 0.4rem !important;
+  }
+
+  .project-card .w-10 {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .project-card a {
+    font-size: 0.75rem !important;
+  }
+
+  .project-card svg {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+  }
+
+  #experiencia .space-y-8 > * + * {
+    margin-top: 1rem !important;
+  }
+
+  .timeline-line::before {
+    display: none !important;
+  }
+
+  .timeline-dot {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+
+  .timeline-dot svg {
+    width: 0.85rem !important;
+    height: 0.85rem !important;
+  }
+
+  #experiencia .bg-white {
+    padding: 0.75rem 1rem !important;
+  }
+
+  #experiencia h3 {
+    font-size: 0.95rem !important;
+  }
+
+  #experiencia .text-sm {
+    font-size: 0.8rem !important;
+  }
+
+  #experiencia li {
+    margin-top: 0.15rem !important;
+  }
+
+  .bg-primary-50 {
+    padding: 0.75rem 1rem !important;
+  }
+
+  .bg-primary-50 h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  .bg-primary-50 li {
+    font-size: 0.8rem !important;
+  }
+
+  #contato {
+    background-color: #1e293b !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  #contato h2 {
+    color: white !important;
+  }
+
+  #contato .grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+
+  #contato a {
+    padding: 0.75rem !important;
+  }
+
+  #contato .text-sm {
+    font-size: 0.8rem !important;
+  }
+
+  #contato .text-xs {
+    font-size: 0.7rem !important;
+  }
+
+  #contato .w-12 {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  #contato svg {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  .w-16.h-1 {
+    height: 2px !important;
+    width: 3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .project-card a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.6rem;
+    color: #64748b;
+    word-break: break-all;
+  }
+
+  .project-card .border-t svg {
+    display: none !important;
+  }
+}
