@@ -1,60 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-* {
-  margin: 0;
-  padding: 0px;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
-body {
-  background-color: #4984b8;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  font-family: "Open Sans", sans-serif;
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(59, 130, 246, 0.03) 0%, transparent 50%);
 }
 
-.background {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(238, 237, 237);
-  max-width: 1600px;
-  height: 100%;
+.timeline-line {
+  position: relative;
 }
 
-.container-profile {
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding: 10px;
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 2.5rem;
+  bottom: 0;
+  width: 2px;
+  background-color: #e2e8f0;
 }
 
-.image {
-  width: 20vw;
-  border-radius: 40%;
+.profile-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.session {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 5px;
-  width: 100%;
-  align-self: flex-start;
-  list-style-position: inside;
-  padding: 15px;
+.profile-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
 }
 
-h2 {
-  background-image: linear-gradient(to right, gray, rgb(238, 237, 237));
-  padding: 4px;
-  border-radius: 10px;
+.skill-badge {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-h3 {
-  text-indent: 1em;
+.skill-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .p {
@@ -63,40 +48,7 @@ h3 {
   display: block;
 }
 
-.indent {
-  text-indent: 1em;
-}
-
-a {
-  text-decoration: none;
-  transition: color 0.3s ease, background-color 0.3s ease, transform 0.2s ease;
-  font-weight: 500;
-  display: inline-block;
-  padding-left: 3em;
-}
-
-.link {
-  color: #2563eb;
-  border-bottom: 2px solid transparent;
-}
-
-.link:hover {
-  color: #1d4ed8;
-  border-bottom-color: #1d4ed8;
-  transform: scale(1.05);
-}
-
-@media screen and (max-width: 768px) {
-  a {
-    margin: 8px;
-  }
-
-  .container-profile {
-    background-image: linear-gradient(to bottom, #4984b8, rgb(238, 237, 237));
-  }
-
-  .image {
-    width: 30vw;
-    border-radius: 40%;
-  }
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }

@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alexandre Silvestri - Desenvolvedor Full Stack em Porto Alegre, RS. Portfólio profissional." />
+    <title>Alexandre Silvestri | Desenvolvedor Full Stack</title>
+    <link rel="shortcut icon" href="./img/code.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#eff6ff',
+                100: '#dbeafe',
+                200: '#bfdbfe',
+                300: '#93c5fd',
+                400: '#60a5fa',
+                500: '#3b82f6',
+                600: '#2563eb',
+                700: '#1d4ed8',
+                800: '#1e40af',
+                900: '#1e3a5a',
+              }
+            }
+          }
+        }
+      }
+    </script>
     <link rel="stylesheet" href="main.css" />
-    <title>Alexandre Silvestri</title>
   </head>
-  <body>
-    <div class="background">
-      <div class="container-profile">
-        <img
-          class="image"
-          src="./img/profile/20250601_200315.jpg"
-          alt="Foto de perfil"
-        />
-        <h1 class="textProfile">Prazer, Alexandre!</h1>
+  <body class="bg-gray-50 font-sans text-slate-700 antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#hero" class="text-lg font-semibold text-slate-800 hover:text-primary-600 transition-colors">
+            Alexandre Silvestri
+          </a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#sobre" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Sobre</a>
+            <a href="#habilidades" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Habilidades</a>
+            <a href="#projetos" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Projetos</a>
+            <a href="#experiencia" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Experiência</a>
+            <a href="#contato" class="text-sm font-medium text-slate-600 hover:text-primary-600 transition-colors">Contato</a>
+          </div>
+          <div class="md:hidden">
+            <a href="#contato" class="text-sm font-medium text-primary-600 hover:text-primary-700 transition-colors">Contato</a>
+          </div>
+        </div>
       </div>
       <div class="session">
         <h2>Apresentação</h2>
@@ -23,12 +64,17 @@
           Estou cursando Análise e desenvolvimento de sistemas na
           Univali.
         </p>
-        <p class="indent">
-          Sou uma pessoa concentrada e dedicada. Possuo muita vontade de
-          aprender e melhorar, para me tornar um profissional cada vez mais
-          eficiente.
+        <p class="text-lg text-slate-500 max-w-xl mx-auto mb-8">
+          Tenho 22 anos, atualmente moro em Porto Alegre - RS. Concentrado, dedicado, e em constante evolução como profissional.
         </p>
-      <div class="session">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#projetos" class="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors shadow-md shadow-primary-200">
+            Ver Projetos
+          </a>
+          <a href="https://wa.me/5547989092738" target="_blank" class="inline-flex items-center px-6 py-3 bg-white text-primary-600 font-medium rounded-lg border border-primary-200 hover:bg-primary-50 transition-colors">
+            Entre em Contato
+          </a>
+        </div>
       </div>
         <h2>Resumo técnico</h2>
         <p class="indent">
@@ -79,10 +125,121 @@
             >Repositório do projeto</a
           >
         </div>
-        <div>
-          <h3>
-            3. Sistema de gerenciamento de estoque para Empreiteira de mão de
-            obra
+      </div>
+    </section>
+
+    <section id="experiencia" class="py-20 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-slate-800 mb-2">Experiências</h2>
+          <div class="w-16 h-1 bg-primary-500 mx-auto rounded-full"></div>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-8">
+
+          <div class="timeline-line">
+            <div class="flex items-start gap-4">
+              <div class="timeline-dot w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center flex-shrink-0 mt-1">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex-grow">
+                <h3 class="text-lg font-semibold text-slate-800">1. Empreiteira LK</h3>
+                <p class="text-primary-600 font-medium text-sm mb-4">Auxiliar Administrativo</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Desenvolvimento de sistema para controle de ferramentas, compras de
+                      materiais, levantamento de entrada e saída de dinheiro por obra.
+                      (TypeScript, React, Node.js + Postgres).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Desenvolvimento de app
+                      mobile para controle de diárias de funcionários (Kotlin + Jetpack
+                      Compose + Kor Framework).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Desenvolvimento de um site portfólio para
+                      empresa, apresentando seu trabalho e execuções! (HTML + CSS +
+                      JavaScript Vanilla).</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Criação e edição de fotos com photoshop, e
+                      videos feitos com câmera e drone, das Obras em andamento.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Criação,
+                      edição e utilização de dados em Tabelas Excel.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Recebimento e envio de
+                      notas fiscais.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Compras de ferramentas e materiais.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Registro de
+                      documentos de funcionários e empresas fornecedoras de serviços.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Medição de pagamento para empresas fornecedoras de serviços.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Diversos outros serviços.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-line">
+            <div class="flex items-start gap-4">
+              <div class="timeline-dot w-10 h-10 rounded-full bg-primary-500 flex items-center justify-center flex-shrink-0 mt-1">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex-grow">
+                <h3 class="text-lg font-semibold text-slate-800">2. Conferir Engenharia</h3>
+                <p class="text-primary-600 font-medium text-sm mb-4">Desenvolvedor de Software</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Desenvolvimento de sistema de contratos e medições de pagamento para fornecedores de MO</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Implantação de gerenciador de tarefas no setor administrativo, financeiro e TI da empresa (Software: Asana)</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Migração de dados de ERP antigo para ERP utilizado atualmente, através do uso das APIs get do sistema antigo, e APIs post do sistema atual</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary-400 mt-1.5 flex-shrink-0">&#8226;</span>
+                    <span>Automação de trabalhos financeiros e administrativos da empresa (Ferramenta: N8N)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto bg-primary-50 rounded-2xl p-6 sm:p-8 border border-primary-100">
+          <h3 class="text-lg font-semibold text-primary-800 mb-4 flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Observações importantes
           </h3>
           <p class="p">
             Projeto que estou trabalhando atualmente, cujo primeiro objetivo é
@@ -187,6 +344,7 @@
           >
         </div>
       </div>
-    </div>
+    </section>
+
   </body>
 </html>
