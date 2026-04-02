@@ -287,14 +287,4 @@ html {
     margin-bottom: 0.5rem !important;
   }
 
-  .project-card a[href^="http"]::after {
-    content: " (" attr(href) ")";
-    font-size: 0.6rem;
-    color: #64748b;
-    word-break: break-all;
-  }
-
-  .project-card .border-t svg {
-    display: none !important;
-  }
 }
